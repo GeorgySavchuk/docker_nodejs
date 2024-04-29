@@ -2,9 +2,9 @@
   "name": "docker_nodejs",
   "version": "1.0.0",
   "description": "A simple Node.js application for Docker",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "author": "Georgy",
   "license": "MIT"
