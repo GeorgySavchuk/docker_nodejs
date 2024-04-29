@@ -1,4 +1,10 @@
-FROM ubuntu:latest
-LABEL authors="GOSHA"
+FROM node:latest
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+CMD ["node", "app.js"]
